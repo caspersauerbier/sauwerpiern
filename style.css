@@ -1,0 +1,72 @@
+ @font-face { font-family: Didot; src: url('Didot.ttf'); } 
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #5B6D83;
+  font-size: 24px;
+  font-family: Didot;
+  font-weight: 200;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #5B6D83;
+  font-size: 19px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+
+}
+
+p {
+  text-align: center;
+  color: #5B6D83;
+  font-size: 14px;
+  font-family: 'EB Garamond', serif;
+}
+
+a:link {
+  color: #5B6D83;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 422px;
+  height: 261px;
+  border: 1px solid #8595A5;
+  position: relative;
+  margin: 23px;
+}
+
+.short-text { display: none; }
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 261px;
+    height: 422px;
+  }
+  .short-text { display: inline; }
+  .full-text { display: none; } 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
