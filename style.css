@@ -36,29 +36,24 @@ a:hover {
 }
 
 .container {
-  width: 422px;
-  height: 261px;
-  border: 1px solid #8595A5;
+  width: 100%;
+  min-width: 70%;
+  height: 400px;
+  border: 1px solid:#000;
   position: relative;
-  margin: 23px;
+  margin: 0px;
 }
 
 .short-text { display: none; }
 
-@media screen and (max-width: 700px) {
-  .container {
-    width: 261px;
-    height: 422px;
-  }
-  .short-text { display: inline; }
-  .full-text { display: none; } 
-}
 
 .center {
   margin: 0;
   position: absolute;
+
   top: 50%;
   left: 50%;
+  width: 300px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -69,4 +64,16 @@ a:hover {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .short-text { display: block; }
+  .full-text { display: none; } 
 }
